@@ -20,33 +20,31 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
+            android:id="@+id/call"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="75732654"
-            android:autofillHints="" />
+            android:text="75732654"/>
 
         <ImageButton
             android:id="@+id/btncall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_call"/>
+            android:src="@android:drawable/ic_menu_call" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="" />
+            android:text=""/>
 
         <ImageButton
             android:id="@+id/btnstore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@android:drawable/ic_menu_save"
-
-            />
+            android:src="@android:drawable/ic_menu_save" />
 
     </LinearLayout>
 
