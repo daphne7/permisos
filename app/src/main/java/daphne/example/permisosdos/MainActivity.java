@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
    public void callPhone(){
        TextView phone = findViewById(R.id.call);
-       Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel"+ phone.getText()));
+       Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:"+ phone.getText()));
        startActivity(intent);
    }
 
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
    }
 
    public void storeData(){
-        TextView data = findViewById(R.id.content);
+        TextView data = findViewById(R.id.call);
         try {
             FileOutputStream files = openFileOutput("android.txt", Activity.MODE_PRIVATE);
             OutputStreamWriter writer = new OutputStreamWriter(files);
